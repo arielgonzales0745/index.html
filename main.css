@@ -1,0 +1,698 @@
+
+        /* General Reset and Body Styles */
+        body,
+        h1,
+        h2,
+        h3,
+        p,
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+            line-height: 1.6;
+        }
+
+        /* Navigation Styles */
+        header {
+            background-color: #222;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 10px 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: #yellow;
+            text-decoration: none;
+            padding: 8px 12px;
+            display: block;
+            transition: color 0.3s ease, background-color 0.3s ease;
+            border-radius: 5px;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: orange;
+            background-color: #white;
+        }
+
+        /* Page Styles */
+        .page {
+            width: 80%;
+            min-height: 80vh;
+            background-color: #333;
+            margin: 80px auto 20px;
+            padding: 20px;
+            box-sizing: border-box;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Page 1 (Portfolio Title) */
+        .page-1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        .page-1 h1 {
+            font-size: 60px;
+            font-weight: bold;
+            letter-spacing: 8px;
+            margin-bottom: 20px;
+			color: #ff6600;
+        }
+
+        .name-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .line {
+            width: 100px;
+            height: 2px;
+            background-color: #ff6600;
+            margin: 0 15px;
+        }
+
+        .page-1 h2 {
+            font-size: 30px;
+            color: orange;
+            font-weight: bold;
+            margin: 0;
+        }
+
+    /* Page 2 (About Me) */
+.page-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    text-align: center;
+}
+
+.page-2 .text-section {
+    width: 60%;
+    padding-right: 20px;
+}
+
+.page-2 h1 {
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+	color: #ff6600;
+}
+
+.page-2 p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 auto; 
+    width: 80%; 
+	border: 2px solid #ff6600; 
+    border-radius: 8px;
+    background-color: #white; 
+}
+
+.page-2 .image-section {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-2 .image-section img {
+    width: 200px;
+    border-radius: 5px;
+    border-top: 5px solid orange;  
+    border-right: 5px solid orange; 
+}
+
+
+        /* Page 3 (Education) */
+.page-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.page-3 h1 {
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    color: #ff6600; 
+}
+
+.page-3 .education-container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: space-between; 
+    width: 80%; 
+}
+
+.page-3 .education-item {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    padding: 15px;
+    border: 2px solid #ff6600; 
+    border-radius: 8px;
+    background-color: #333; 
+    text-align: left; 
+    width: 45%; 
+    box-sizing: border-box; 
+}
+
+.page-3 .education-item h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: orange; 
+}
+
+.page-3 .education-item h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ddd; 
+}
+
+.page-3 .education-item p {
+    font-size: 16px;
+    color: #aaa; 
+    margin-top: 5px;
+    text-align: left; 
+    white-space: nowrap;
+    padding: 5px;
+    border-top: 2px solid orange; 
+}
+
+
+       /* Page 4 (Work Experience) */
+.page-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.page-4 h1 {
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+	color: #ff6600;
+}
+
+.page-4 .work-experience-container {
+    display: flex;
+    gap: 20px; 
+    justify-content: space-between; 
+    width: 80%; 
+}
+
+.page-4 .work-experience-item {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    padding: 15px;
+    border: 2px solid #ff6600; 
+    border-radius: 8px;
+    background-color: #333; 
+    text-align: left;
+    width: 45%; 
+}
+
+.page-4 .work-experience-item h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: orange; 
+}
+
+.page-4 .work-experience-item h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff6600; 
+}
+
+.page-4 .work-experience-item p {
+    font-size: 16px;
+    color: #aaa; 
+    margin-top: 5px;
+    text-align: 
+    white-space: nowrap;
+    padding: 5px;
+    border-top: 2px solid orange; 
+}
+
+        /* Page 5 (Skills) */
+.page-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 20px;
+    background-color: #333; 
+}
+
+.page-5 h1 {
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ff6600;
+}
+
+.page-5 .skills-section {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    width: 100%; 
+    justify-content: center; 
+}
+
+.page-5 .skills-section div {
+    text-align: center;
+    margin: 10px;
+    width: 20%; 
+}
+
+.page-5 .skills-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: orange;
+}
+
+.page-5 .certificates-section {
+    width: 80%; 
+    margin-top: 40px;
+    padding: 20px;
+    border: 2px solid #ff6600; 
+    border-radius: 10px;
+    background-color: #333; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.page-5 .certificates-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: orange;
+    text-align: center; 
+}
+
+.page-5 .certificates-section p {
+    font-size: 16px;
+    margin-bottom: 5px;
+    text-align: center; 
+    color: #ddd; 
+}
+
+.page-5 .examination-box {
+    width: 80%; 
+    padding: 20px;
+    border: 2px solid #ff6600; 
+    border-radius: 10px;
+    background-color: #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    margin-top: 40px;
+}
+
+.page-5 .examination-box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: orange;
+    text-align: center; 
+}
+
+.page-5 .examination-box p {
+    font-size: 16px;
+    margin-bottom: 5px;
+    text-align: center; 
+    color: #ddd; 
+}
+/* === Page 6 (Contact) Layout === */
+.page-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #333; 
+    min-height: 100vh;
+}
+
+/* === Page 6 Title === */
+.page-6 h1 {
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    margin: 10px 0;
+    text-align: center;
+    color: #ff6600;
+}
+
+/* === Contact Info Section === */
+.page-6 .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%; 
+    max-width: 400px;
+    margin-bottom: 40px;
+    margin: 10px 0;
+}
+
+.page-6 .contact-info p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    margin: 10px 0;
+    padding: 14px 20px;
+    border: 2px solid #ff6600;
+    border-radius: 10px;
+    background-color: #333; 
+    color: #white;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+/* === Form Grid === */
+.form-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 80%;
+    max-width: 400px;
+    margin-top: 20px;
+    margin: 10px 0;
+}
+
+.form-grid input,
+.form-grid button {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #ff6600; 
+    font-size: 16px;
+    margin: 10px 0; 
+}
+
+.form-grid input {
+    background-color: #222;
+    color: white;
+}
+
+.form-grid button {
+    background-color: #ff6600;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.form-grid button:hover {
+    background-color: #ff9900;
+}
+
+/* === Footer Styling for Page 6 === */
+.page-6 footer {
+    width: 100%;
+    background-color: #333; 
+    color: white;
+    padding: 16px 20px;
+    text-align: center;
+    margin-top: auto;
+    border-top: 2px solid #ff6600;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.page-6 footer .container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+	
+}
+
+.page-6 footer p {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+
+.page-6 footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+	
+}
+
+.page-6 footer a:hover {
+    text-decoration: underline;
+    opacity: 0.9;
+
+}
+
+.page-6 footer p .icon {
+    font-size: 12px;
+    order: 2;
+	background-color: #orange;
+}
+/* === Footer Styling for Page 6 === */
+.page-6 footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #ff6600;
+    color: white;
+    padding: 16px 20px;
+    text-align: center;
+    margin-top: auto;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+    border-top: 2px solid #ff6600; 
+}
+
+.page-6 footer .container {
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.page-6 footer p {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.page-6 footer a {
+    color: blue; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.page-6 footer a:hover {
+    text-decoration: underline;
+    opacity: 0.9;
+}
+
+.page-6 footer p .icon {
+    font-size: 12px;
+    order: 2;
+}
+
+
+
+/* === Page 7 (Thank You Page) === */
+.page-7 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #333; 
+    min-height: 100vh;
+    color: #ddd; 
+}
+
+/* === Page 7 Title === */
+.page-7 h1 {
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin: 20px 0; 
+    text-align: center;
+    color: #ff6600;
+}
+
+/* === Page 7 Footer === */
+.page-7 footer {
+    width: 100%;
+    background-color: #ff6600;
+    color: white;
+    padding: 16px 20px;
+    text-align: center;
+    margin-top: auto;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.page-7 footer .container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.page-7 footer p {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.page-7 footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 4px;
+}
+
+.page-7 footer a:hover {
+    text-decoration: underline;
+    opacity: 0.9;
+}
+
+.page-7 footer p .icon {
+    font-size: 12px;
+    order: 2;
+}
+
+        /* Orange Bars and Page Numbers (Common) */
+        .orange-bar {
+            position: absolute;
+            width: 20px;
+            background-color: orange;
+        }
+
+        .orange-bar.left {
+            left: 0;
+            top: 0;
+            height: 100%;
+        }
+
+        .orange-bar.right {
+            right: 0;
+            top: 0;
+            height: 100%;
+        }
+
+        .page-number {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            font-size: 14px;
+            color: white;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .page {
+                width: 95%;
+                min-height: auto;
+                margin-top: 60px;
+                padding: 10px;
+            }
+
+            .page-1 h1,
+            .page-2 h1,
+            .page-3 h1,
+            .page-4 h1,
+            .page-5 h1,
+            .page-6 h1,
+            .page-7 h1 {
+                font-size: 40px;
+            }
+
+            .page-2 {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .page-2 .text-section,
+            .page-2 .image-section {
+                width: 100%;
+                padding-right: 0;
+            }
+
+            .page-2 .image-section img {
+                width: 150px;
+            }
+
+            .skills-section {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .skills-section div {
+                margin: 10px 0;
+            }
+
+            .work-experience-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .work-experience-item p {
+                text-align: left;
+                white-space: normal;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 5px 0;
+            }
+       
